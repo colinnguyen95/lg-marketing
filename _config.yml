@@ -1,0 +1,14 @@
+#Site settings
+title: Colin Nguyen
+email: nguyencolin95@gmail.comp
+description: "Programmer | Photographer | Designer"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+port: 3000
+
+sass:
+  sass_dir: assets/css
+  style: compressed

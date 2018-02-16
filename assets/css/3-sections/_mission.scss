@@ -1,0 +1,30 @@
+.mission{
+    //height: 500px;
+    //background: pink;
+    //margin: 50px 50px;
+    
+    max-width: 620px;
+    padding: 0 15px;
+    margin: 50px auto;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.6;
+    
+    hr{
+        width: 50px;
+        display: block;
+        border: 5px solid #4FC2AA;
+    }
+    
+    .mission-title{
+        margin-bottom: 24px;
+    }
+    
+    // .mission-description{
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     text-align: center;
+    // }
+}

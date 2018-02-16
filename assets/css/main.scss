@@ -1,0 +1,15 @@
+---
+---
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background: #EDEDEE;
+    //padding: 0 50px;
+    // max-width:1700px;
+    // @extend: %center;
+}
+
+@import '1-tools/-tools-dir';
+@import '2-base/-base-dir';
+@import "3-sections/-sections-dir";

@@ -1,0 +1,272 @@
+header{
+    // padding: 0 50px;
+    background: #EDEDEE;
+    //margin-top: 50px;
+    
+    section{
+        height: 500px;
+        background: linear-gradient(
+                         rgba(20,20,20, .5),
+                         rgba(20,20,20, .9),
+                         rgba(20,20,20, .5)),
+                         url( ../../assets/img/header_LG.jpg) center center;
+        //position: relative;
+        background : {
+           size: cover;
+           //attachment: fixed;
+           //size: contain;
+           position: center;
+           repeat: no-repeat;
+        }
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .title{
+            height: 75%;
+            //background: green;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            //grid-gap: 20px;
+            grid-template-areas:
+            "icon icon icon"
+            "icon icon icon"
+            "brand1 brand1 brand1"
+            "brand2 brand2 brand2"
+            "brand3 brand3 brand3"
+            "motto motto motto";
+            
+            
+            
+            .item{
+               // background: pink;
+            }
+                
+                
+            .icon{
+                grid-area: icon;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: url(../../assets/img/lglogo120.svg) no-repeat center center;
+                // grid-row: span 2;
+                // grid-column: span 1;
+                //padding-bottom: 50px;
+            }
+            .brand1{
+                grid-area: brand1;
+                // grid-row: span 1;
+                // grid-column: span 2;
+                margin: 0;
+            }
+            .brand2{
+                grid-area: brand2;
+                // grid-row: span 1;
+                // grid-column: span 2;
+                margin: 0;
+            }
+            
+            .brand3{
+                grid-area: brand3;
+                align-items: flex-end; 
+                display: flex; 
+                justify-content: center;
+                hr{
+                    width: 100%;
+                    border: 3px solid white;
+                    border-radius: 3px;
+                }
+            }
+            .motto{
+                grid-area: motto;
+                // grid-row: span 1;
+                // grid-column: span 3;
+                margin: 0;
+                //border-top: 3px solid white;
+            }
+                
+            
+            h1{
+                font-family: $font-title;
+                align-items: flex-end; 
+                display: flex; 
+                justify-content: center; 
+                font : {
+                    size: 40px;
+                    weight: 700;
+                }
+                color: #70BEAA;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+
+            }
+            
+            h2{
+                font-family: $font-title;
+                display: flex; 
+                justify-content: center;
+                font : {
+                    size: 34px;
+                }
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+            
+            .motto2{
+                font-family: $font-motto;
+                align-items: flex-end; 
+                display: flex; 
+                justify-content: center;
+                text-transform: capitalize;
+                letter-spacing: 0.05em;
+                color: white;
+                font : {
+                    size: 20px;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 800px){
+    header{
+        padding: 0 50px;
+        background: #EDEDEE;
+        margin-top: 50px;
+        //display: flex;
+        // justify-content: center;
+        // align-items: center;
+        
+        section{
+            height: 600px;
+            max-width:1700px;
+            margin: auto;
+            background: linear-gradient(
+                             rgba(20,20,20, .5),
+                             rgba(20,20,20, .9),
+                             rgba(20,20,20, .5)),
+                             url( ../../assets/img/header_LG.jpg) center center;
+            //position: relative;
+            background : {
+              size: 100vw;
+              attachment: fixed;
+              //size: contain;
+              position: top;
+              repeat: no-repeat;
+            }
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        .title{
+            height: 65%;
+            //background: green;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            //grid-gap: 20px;
+            grid-template-areas:
+            "icon brand1 brand1"
+            "icon brand2 brand2"
+            "brand3 brand3 brand3"
+            "motto motto motto";
+            
+            .item{
+                //background: pink;
+            }
+                
+                
+            .icon{
+                background: url(../../assets/img/logo.svg) no-repeat center center;
+                grid-area: icon;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // grid-row: span 2;
+                // grid-column: span 1;
+            }
+            .brand1{
+                grid-area: brand1;
+                // grid-row: span 1;
+                // grid-column: span 2;
+                margin: 0;
+            }
+            .brand2{
+                grid-area: brand2;
+                // grid-row: span 1;
+                // grid-column: span 2;
+                margin: 0;
+            }
+            
+            .brand3{
+                grid-area: brand3;
+                align-items: flex-end; 
+                display: flex; 
+                justify-content: center;
+                hr{
+                    width: 80%;
+                    border: 3px solid white;
+                    border-radius: 3px;
+                }
+            }
+            .motto{
+                grid-area: motto;
+                // grid-row: span 1;
+                // grid-column: span 3;
+                margin: 0;
+                //border-top: 3px solid white;
+            }
+                    
+                
+                h1{
+                    font-family: $font-title;
+                    font-weight: lighter;
+                    align-items: flex-end; 
+                    display: flex; 
+                    justify-content: center; 
+                    font : {
+                        size: 60px;
+                    }
+                    color: #70BEAA;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+    
+                }
+                
+                h2{
+                    font-family: $font-title;
+                    display: flex; 
+                    justify-content: center;
+                    font : {
+                        size: 50px;
+                        weight: lighter;
+                    }
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                }
+                
+                .motto2{
+                    font-family: $font-motto;
+                    font-weight: lighter;
+                    align-items: flex-end; 
+                    display: flex; 
+                    justify-content: center;
+                    text-transform: capitalize;
+                    letter-spacing: 0.05em;
+                    color: white;
+                    font : {
+                        size: 30px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

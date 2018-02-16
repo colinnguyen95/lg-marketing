@@ -1,0 +1,97 @@
+header{
+    height: 700px;
+    //background: url("../../assets/img/header_LG.jpg") center center;
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url( ../../assets/img/header_LG.jpg) center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    
+    // .logo{
+    //     height: 50px;
+    //     width: 50px;
+    //     float: left;
+    //     margin: 10px 0 0 30px;
+        
+    //     path {
+    //         fill: rgba(0,0,0,0.7);
+    //     }
+    // }
+    
+    nav{
+        float: right;
+        margin: 30px 30px 0 0;
+        a{
+            text-decoration:none;
+            display: inline-block;
+            margin-left: 20px;
+            color: rgba(0,0,0,0.7);
+            @extend %small-bold;
+            
+            &:hover{
+                color: rgba(0,0,0,1);
+            }
+        }
+        
+    }
+    h1{
+        text-align: center;
+        font : {
+            size: 72px;
+            weight: 700;
+        }
+        color: #70beaa;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        clear: both;
+        padding-top: 180px;
+        
+        span{
+            display: inline-block;
+            //padding: 0.2em 0.5em;
+            //border: white solid 10px;
+            
+            &.lg{
+                //margin-top: 50px;
+            }
+        }
+    }
+    
+    h2{
+        
+        text-align: center;
+        font : {
+            size: 72px;
+            weight: 700;
+        }
+        color: #70beaa;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 20px;
+        clear: both;
+        padding-top: 180px;
+    }
+    .kicker{
+            text-align: center;
+            @extend %small-bold;
+            letter-spacing: 0.05em;
+            color: white;
+            line-height: 1;
+        }
+}
+
+@media screen and (max-width: 650px){
+    header{
+        height: 450px;
+        
+        h1{
+            padding-top: 50px;
+        }
+    }
+}

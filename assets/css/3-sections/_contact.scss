@@ -1,0 +1,21 @@
+.contact{
+    height: 500px;
+    //margin: 0 auto;
+    padding: 50px;
+    margin: 50px;
+    background: linear-gradient(
+        rgba(0,0,0, .5),
+        rgba(0,0,0, .5),
+        rgba(0,0,0, .5)),
+        url( ../../assets/img/contact_lg.jpg);
+    
+    background : {
+        //image: url( ../../assets/img/contact_lg.jpg);
+        size: cover;
+        attachment: fixed;
+        position: center;
+        repeat: no-repeat;
+        //color: red;
+    }
+    
+}

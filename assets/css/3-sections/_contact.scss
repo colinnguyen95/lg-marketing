@@ -16,7 +16,7 @@
     
     background : {
         size: cover;
-        attachment: fixed;
+        //attachment: fixed;
         position: center;
         repeat: no-repeat;
     }
@@ -76,6 +76,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
+        
+        background : {
+            size: cover;
+            attachment: fixed;
+            position: center;
+            repeat: no-repeat;
+        }
         
         .contact-section{
             p{

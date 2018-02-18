@@ -1,54 +1,112 @@
 footer{
      background: #4FC2AA;
      display: grid;
+     margin: 50px 0;
+     margin-bottom: 0;
+     height: 100%;
+     //width: 100%;
+     padding: 20px;
+     text-align: center;
+     color: white;
+     font-family: $font-motto;
+     font-weight: lighter;
+     //font-size: 30px;
      
      grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: repeat(2, 1fr);
-//     //background-size: cover;
+     //grid-template-rows: repeat(3, 1fr);
+     grid-gap: 50px;
+     
+     grid-template-areas: 
+     "address hours"
+     "address hours"
+     "social social";
+     p{
+         font-size: 12px;
+         margin: 0.3em;
+     }
+     h2{
+         font-size: 20px;
+         margin: 0.3em;
+     }
+     
+    .address{
+        grid-area: address;
+        //display: inline-block;
+        //@extend %center;
+    }
     
-//     .lockup{
-//         padding: 50px 30px;
-//         @include clearfix;
-
+    .hours{
+        grid-area: hours;
+    }
+    
+    .social-media{
+        grid-area: social;
         
-//         .logo{
-//             @include size(50px);
-//             float: left;
-//             margin-right: 30px;
-            
-//             path{
-//                 fill: rgba(0,0,0,0.6);
-//             }
-//         }
-        
-//         .content-wrap{
-//             float: left;
-            
-//             a{
-//               text-decoration: none;
-//               @extend %small-bold;
-//               color: rgba(0,0,0,0.5);
-//               display: inline-block;
-//               margin-right: 30px;
-              
-//               &:hover{
-//                   color: rgba(0,0,0,1);
-//               }
-//             }
-            
-//             .copyright{
-//                 margin: 0;
-//                 text-transform: uppercase;
-//                 font-size: 12px;
-//                 color: rgba(0,0,0,0.4);
-//             }
-//         }
-//     }
-}
-
-@media(min-width: 700px){
-    footer{
-        margin: 0 50px;
-        height: 500px;
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                display: inline-block;
+            }
+            a{
+                color: white;
+                width: 80px;
+                height: 80px;
+                //background: #fff;
+                text-align: center;
+                //line-height: 40px;
+                font-size: 20px;
+                margin: 0 5px;
+                //display: block;
+            }
+            a:hover{
+                color: #7F7F7F;
+            }
+        }
     }
 }
+
+@media (min-width: 1025px) {
+    footer{
+         margin: 0 50px;
+         height: 300px;
+         padding: 50px;
+         
+         p{
+             margin: 0.3em;
+             font-size: 18px;
+         }
+         h2{
+             margin: 0.3em;
+             font-size: 24px;
+         }
+        
+        .social-media{
+            grid-area: social;
+            
+            ul{
+                list-style: none;
+                li{
+                    display: inline-block;
+                }
+                a{
+                    color: white;
+                    width: 80px;
+                    height: 80px;
+                    //background: #fff;
+                    text-align: center;
+                    //line-height: 40px;
+                    font-size: 24px;
+                    margin: 0 10px;
+                    display: block;
+                }
+                a:hover{
+                    color: #7F7F7F;
+                }
+            }
+        }
+    }
+}
+
+

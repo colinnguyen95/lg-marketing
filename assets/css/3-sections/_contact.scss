@@ -68,6 +68,68 @@
     
 }
 
+@media (min-width: 768px) and (max-width: 1024px){
+    .contact{
+        height: 500px;
+        padding: 50px 50px;
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+        
+        background : {
+            size: cover;
+            attachment: fixed;
+            position: center;
+            repeat: no-repeat;
+        }
+        
+        .contact-section{
+            p{
+                margin: 10px;
+            }
+            .brand{
+                font-size: 30px;
+            }
+            
+            .phone, .email{
+                font-size: 20px;
+            }
+        }
+        
+        form{
+            
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            
+            p{
+                margin: 0;
+            }
+            
+            // input{
+            //     padding-right: 1em;
+            //     /padding: 0;
+            // }
+            
+            button, input, textarea{
+                width: 95%;
+                padding: 0.5em;
+            }
+            
+            button{
+                background: #4FC2AA;
+                border: 0;
+            }
+            
+            button:hover, button:focus{
+                background: #2A7C6B;
+            }
+        }
+        
+    }
+}
+
 @media(min-width: 1025px){
     .contact{
         height: 500px;

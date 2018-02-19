@@ -1,4 +1,5 @@
 .main{
+    
     //max-width: 1700px;
     //margin: 50px;
     //flex: 1 1 80%;
@@ -6,6 +7,7 @@
     //background: green;
     
     .portfolio{
+        //@extend %center;
         display: grid;
         //height: 900px;
         //grid-template-rows: repeat(4, 1fr);
@@ -126,7 +128,7 @@
 
 @media (min-width: 1025px){
     .main{
-        max-width: 1700px;
+        //max-width:1281px;
         margin: 50px;
         
         .portfolio{

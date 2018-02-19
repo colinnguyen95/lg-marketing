@@ -109,16 +109,17 @@ header{
 }
 
 
-@media screen and (min-width: 1025px){
+@media (min-width: 1025px){
     header{
         padding: 0 50px;
         background: #EDEDEE;
-        margin-top: 50px;
+        //margin-top: 50px;
         
         section{
             height: 600px;
-            max-width:1700px;
+            //max-width: 1281px;
             margin: auto;
+            //background-size: 100vw;
             background: linear-gradient(
                              rgba(20,20,20, .5),
                              rgba(20,20,20, .9),
@@ -127,6 +128,8 @@ header{
             
             background : {
               size: 100vw;
+              //size: contain;
+              //size: contain;
               attachment: fixed;
               position: top;
               repeat: no-repeat;
@@ -227,3 +230,7 @@ header{
         }
     }
 }
+
+
+
+

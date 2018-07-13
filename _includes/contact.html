@@ -8,30 +8,33 @@
 <!--        <input type="send" value="Send">-->
 <!--    </form>-->
 <!--</section>-->
-
-<section class="contact">
-    <div class="contact-section">
-       <p class="brand">Looking to get in touch?</p>
-       <p class="brand">We can't wait to hear from you!</p>
-       <br>
-       <p class="phone">Phone: (408) 320 - 7643</p>
-       <p class="email">info@lgmarketing.me</p>
+<section id="contact-section" class="contact">
+    <div class="contact-container">
+        <div class="contact-section">
+           <p class="brand">Looking to get in touch?</p>
+           <p class="brand">We can't wait to hear from you!</p>
+           <br>
+           <p class="phone">Phone: (408) 320 - 7643</p>
+           <p class="email">info@lgmarketing.me</p>
+           <div class="alert">Your message has been sent</div>
+        </div>
+        
+        <form id="contactForm">
+            <p>
+                <input type="text" name="name" placeholder="Name" id="name" required>
+            </p>
+            <p>
+                <input type="email" name="name" placeholder="Email" id="email" required>
+            </p>
+            <p>
+                <input type="text" name="name" placeholder="Subject" id="subject">
+            </p>
+            <p class="full">
+                <textarea name="message" rows="5" placeholder="Message" id="message"></textarea>
+            </p>
+            <p class="full">
+                <button type="submit">Submit</button>
+            </p>
+        </form>
     </div>
-    <form>
-        <p>
-            <input type="text" name="name" placeholder="Name">
-        </p>
-        <p>
-            <input type="email" name="name" placeholder="Email">
-        </p>
-        <p>
-            <input type="text" name="name" placeholder="Subject">
-        </p>
-        <p class="full">
-            <textarea name="message" rows="5" placeholder="Message"></textarea>
-        </p>
-        <p class="full">
-            <button>Submit</button>
-        </p>
-    </form>
 </section>

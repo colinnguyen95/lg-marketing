@@ -1,0 +1,198 @@
+.portfolio{
+    
+    .top{
+        display: flex;
+        flex-direction: column;
+        
+        .five{
+            //height: 400px;
+            background: #4FC2AA;
+            display: inline;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.6;
+            
+            .five-content{
+                margin: 10px;
+                
+                h1{
+                    font-family: $font-motto;
+                    font-weight: lighter;
+                    color: white;
+                    margin: 0;
+                }
+                p{
+                    color: white;
+                    font-weight: lighter;
+                }
+                
+                hr{
+                    width: 50px;
+                    display: block;
+                    border: 3px solid white;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+    
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        
+        .one-content{
+            margin: 10px;
+        }
+        
+        .one{
+            display: inline;;
+            background: rgb(255,255,255);
+            line-height: 1.6;
+            
+            h1{
+                font-family: $font-motto;
+                font-weight: lighter;
+                text-align: center;
+                color: #4FC2AA;
+                margin: 0;
+            }
+            hr{
+                width: 50px;
+                display: block;
+                border: 3px solid #4FC2AA;
+                border-radius: 3px;
+            }
+            p{
+                text-align: center;
+                color: #7F7F7F;
+                font-size: 18px;
+                font-weight: lighter;
+            }
+        }
+        
+        .four{
+            height: 400px;
+            background: url(../../assets/img/about-resize.jpg) center center;
+            background-size: cover;
+            background-position: 0 20%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio{
+        margin: 0;
+        
+        .top{
+            display: flex;
+            flex-direction: row;
+            height: 400px;
+            
+            .five{
+                flex-basis: 50%;
+                background: #4FC2AA;
+                display: inline;
+                //padding: 50px;
+                font-size: 18px;
+                text-align: center;
+                line-height: 1.6;
+                
+                .five-content{
+                    margin: 50px;
+                    
+                    h1{
+                        font-family: $font-motto;
+                        font-weight: lighter;
+                        color: white;
+                        margin: 0;
+                    }
+                    p{
+                        color: white;
+                        font-weight: lighter;
+                    }
+                    
+                    hr{
+                        width: 50px;
+                        display: block;
+                        border: 3px solid white;
+                        border-radius: 3px;
+                    }
+                }
+                
+            }
+            
+            .two{
+                //flex: 1;
+                flex-basis: 25%;
+                background: url(../../assets/img/lg_about_2.1.jpg);
+                background-size: cover;
+            }
+            .three{
+                //flex: 1;
+                flex-basis: 25%;
+                background: url(../../assets/img/lg_about_3.jpg);
+                background-size: cover;
+            }
+        }
+        
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+            
+            .one-content{
+                margin: 50px;
+            }
+            
+            .one{
+                //flex: 1;
+                flex-basis: 50%;
+                display: inline;;
+                background: rgb(255,255,255);
+                //padding: 50px;
+                line-height: 1.6;
+                
+                h1{
+                    font-family: $font-motto;
+                    font-weight: lighter;
+                    text-align: center;
+                    color: #4FC2AA;
+                    margin: 0;
+                }
+                hr{
+                    width: 50px;
+                    display: block;
+                    border: 3px solid #4FC2AA;
+                    border-radius: 3px;
+                }
+                p{
+                    text-align: center;
+                    color: #7F7F7F;
+                    font-size: 18px;
+                    font-weight: lighter;
+                }
+            }
+            
+            .four{
+                //flex: 1;
+                height: 500px;
+                flex-basis: 50%;
+                background: url(../../assets/img/about-resize.jpg) center center;
+                background-size: cover;
+                background-position: 0 35%;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1025px){
+    .portfolio{
+        margin: 50px;
+    }
+}
+
+
+
+
+

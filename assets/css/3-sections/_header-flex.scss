@@ -1,0 +1,253 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    //margin-bottom: 50px;
+    background: linear-gradient(
+                     rgba(20,20,20, .5),
+                     rgba(20,20,20, .9),
+                     rgba(20,20,20, .5)),
+                     url( ../../assets/img/header_LG.jpg) center center;
+    background : {
+       size: cover;
+       position: center;
+       repeat: no-repeat;
+    }
+    
+        .action{
+            //display: inline-block;
+            vertical-align: middle;
+            line-height: 75px;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            right: 2%;
+            bottom: 56.5%;
+            color: white;
+            background-color: rgba(111,191,171,0.7);
+            font-size: 10px;
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+            border: none;
+            //outline-radius: 50%;
+            //outline: 3px solid #70BEAA;
+        }
+        
+        .action:hover{
+            // outline: 3px solid #70BEAA;
+            // outline-offset: 5px;
+            background-color: #70BEAA;
+            opacity: 1;
+        }
+    
+    .parallax-content{
+        height: 70%;
+        //width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        
+        hr{
+            width: 100%;
+            border: 1px solid white;
+            border-radius: 3px;
+        }
+        
+        .motto2{
+            font-family: $font-motto;
+            align-items: flex-end; 
+            display: flex; 
+            justify-content: center;
+            text-transform: capitalize;
+            letter-spacing: 0.05em;
+            color: white;
+            font : {
+                size: 20px;
+                
+            }
+        }
+
+        .title{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+        
+            .icon {
+                //flex: 1;
+                margin-bottom: 20px;
+                width: 120px;
+                height: 120px;
+                //background: url(../../assets/img/lglogo120.svg) no-repeat center center;
+            }
+            
+            .brand {
+                width: 320px;
+                //height: 100px;
+                //background: url(../../assets/img/Brand2.svg) no-repeat center center;
+            }
+            
+            // .title2 {
+            //     h1{
+            //         margin: 0;
+            //         text-align: center;
+            //         font-family: $font-title;
+            //         align-items: flex-end; 
+            //         display: flex; 
+            //         justify-content: center; 
+            //         font : {
+            //             size: 40px;
+            //             weight: 700;
+            //         }
+            //         color: #4FC2AA;
+            //         text-transform: uppercase;
+            //         letter-spacing: 0.05em;
+            //     }
+                
+            //     h2{
+            //         margin: 0;
+            //         text-align: center;
+            //         font-family: $font-title;
+            //         display: flex; 
+            //         justify-content: center;
+            //         font : {
+            //             size: 34px;
+            //         }
+            //         color: white;
+            //         text-transform: uppercase;
+            //         letter-spacing: 0.05em;
+            //     }
+            // }
+        }
+    }
+}
+
+
+@media (min-width: 1025px){
+    header {
+        position: relative;
+        flex-direction: column;
+        height: 600px;
+        margin: 0 50px;
+        background : {
+          size: 100vw;
+          attachment: fixed;
+          position: top;
+          repeat: no-repeat;
+        }
+        
+        .action{
+            //display: inline-block;
+            vertical-align: middle;
+            line-height: 100px;
+            text-align: center;
+            text-decoration: none;
+            position: absolute;
+            right: 3%;
+            bottom: 5%;
+            color: white;
+            background-color: rgba(111,191,171,0.7);
+            font-size: 13px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: none;
+            //outline-radius: 50%;
+            //outline: 3px solid #70BEAA;
+        }
+        
+        .action:hover{
+            // outline: 3px solid #70BEAA;
+            // outline-offset: 5px;
+            background-color: #70BEAA;
+            opacity: 1;
+        }
+        
+        .parallax-content{
+            height: 55%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            
+            hr{
+                width: 90%;
+                border: 1px solid white;
+                border-radius: 3px;
+            }
+            
+            .motto2{
+                font-family: $font-motto;
+                font-weight: lighter;
+                align-items: flex-end; 
+                text-transform: capitalize;
+                letter-spacing: 0.05em;
+                color: white;
+                font : {
+                    size: 30px;
+                }
+            }
+    
+            .title{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row;
+            
+                .icon {
+                    margin: 0;
+                    margin-right: 20px;
+                    width: 156px;
+                    height: 156px;
+                    //background: url(../../assets/img/LG_Icon.svg) no-repeat center center;
+                }
+                
+                .brand {
+                    width: 494px;
+                    height: 100px;
+                    //background: url(../../assets/img/Brand2.svg) no-repeat center center;
+                }
+                
+                // .title2 {
+                //     h1{
+                //         margin: 0;
+                //         text-align: center;
+                //         font-family: $font-title;
+                //         font-weight: lighter;
+                //         //align-items: flex-end; 
+                //         font : {
+                //             size: 60px;
+                //         }
+                //         color: #70BEAA;
+                //         text-transform: uppercase;
+                //         letter-spacing: 0.05em;
+                //     }
+                    
+                //     h2{
+                //         margin: 0;
+                //         text-align: center;
+                //         font-family: $font-title;
+                //         font : {
+                //             size: 50px;
+                //             weight: lighter;
+                //         }
+                //         color: white;
+                //         text-transform: uppercase;
+                //         letter-spacing: 0.05em;
+                //     }
+                // }
+            }
+        }
+    }
+}
+
+
+
+
+

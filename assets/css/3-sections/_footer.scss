@@ -1,25 +1,23 @@
 footer{
      background: #4FC2AA;
-     display: grid;
      margin: 50px 0;
      margin-bottom: 0;
      height: 100%;
-     //width: 100%;
      padding: 20px;
-     text-align: center;
+     //text-align: center;
      color: white;
      font-family: $font-motto;
      font-weight: lighter;
      //font-size: 30px;
      
-     grid-template-columns: repeat(2, 1fr);
+     //grid-template-columns: repeat(2, 1fr);
      //grid-template-rows: repeat(3, 1fr);
-     grid-gap: 50px;
+     //grid-gap: 50px;
      
-     grid-template-areas: 
-     "address hours"
-     "address hours"
-     "social social";
+    //  grid-template-areas: 
+    //  "address hours"
+    //  "address hours"
+    //  "social social";
      p{
          font-size: 12px;
          margin: 0.3em;
@@ -30,17 +28,17 @@ footer{
      }
      
     .address{
-        grid-area: address;
+        //grid-area: address;
         //display: inline-block;
         //@extend %center;
     }
     
     .hours{
-        grid-area: hours;
+        //grid-area: hours;
     }
     
     .social-media{
-        grid-area: social;
+        //grid-area: social;
         
         ul{
             margin: 0;
@@ -71,7 +69,7 @@ footer{
     footer{
          //max-width: 1281px;
          margin: 0 50px;
-         height: 300px;
+         height: 160px;
          padding: 50px;
          
          p{

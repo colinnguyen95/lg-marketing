@@ -1,9 +1,10 @@
 <!-- jekyll serve --host $IP --port $PORT --baseurl '' -->
+<!-- this is the Final workspace, fixing compatibility -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>LG Marketing LLC</title>
-  <meta charset="utf-8">
+  <meta charset = "UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -14,7 +15,7 @@
   
   <section class="nav-section">
     <div class="nav-container">
-        <span class="company-brand">LG Marketing</span>
+        <!--<span class="company-brand">LG Marketing</span>-->
         <nav class="site-nav">
             <ul>
                 <li><a href="">Home</a></li>
@@ -32,47 +33,89 @@
 
 
   <header class="parallax">
-    <section>
+    <div class="parallax-content">
         <div class="title">
-            <div class="item icon"></div>
-            <h1 class="item brand1">Marketing</h1>
-            <h2 class="item brand2">Consulting</h2>
-            <div class="item brand3"><hr></div>
-            <div class="item motto motto2">Create. Elevate. Engage</div>
+            <img src="../../assets/img/LG_Icon.svg" alt="" class="icon">
+            <img src="../../assets/img/Brand2.svg" alt="" class="brand">
+            <!--<div class="item icon"></div>-->
+            <!--<div class="item brand"></div>-->
+            <!--<div class="title2">-->
+            <!--    <h1 class="item brand1">Marketing</h1>-->
+            <!--    <h2 class="item brand2">Consulting</h2>-->
+            <!--</div>-->
         </div>
-    </section>
+        <hr>
+        <div class="item motto motto2">Create. Elevate. Engage</div>
+    </div>
+    
+    <a href="#contact-section" class="action scroll">Get in touch!</a>
 </header>
   
-  <section class="test">
+  <!--<section class="test">-->
      
-<div class="main">
-    <div class="portfolio">
-        <div class="item large one">
-           <h1 class="one-title">Who We Are</h1>
-           <hr>
-            <p>The LG Marketing team consists of professionals with 30+ years of combined 
-            experience in medical device and practice marketing.  By aligning with premiere talent 
-            in Silicon Valley we are able to provide our clients with a wide range of services and most 
-            importantly unparalleled marketing support.</p> 
+<!--<div class="main">-->
+<!--    <div class="portfolio">-->
+<!--        <div class="item large one">-->
+<!--           <h1 class="one-title">Who We Are</h1>-->
+<!--           <hr>-->
+<!--            <p>The LG Marketing team consists of professionals with 30+ years of combined -->
+<!--            experience in medical device and practice marketing.  By aligning with premiere talent -->
+<!--            in Silicon Valley we are able to provide our clients with a wide range of services and most -->
+<!--            importantly unparalleled marketing support.</p> -->
+<!--        </div>-->
+<!--        <div class="item small two"></div>-->
+<!--        <div class="item small three"></div>-->
+<!--        <div class="item large four"></div>-->
+<!--        <div class="item large five">-->
+<!--            <h1 class="mission-title">What We Do</h1>-->
+<!--            <hr>-->
+<!--            <p class="mission-description"><strong>LG Marketing</strong>, LLC is a boutique consulting firm offering a comprehensive list of full-scale marketing services. -->
+<!--            We serve as an extension to your internal team while driving forward progress on your initiatives. -->
+<!--            We work closely with you to create successful programs, elevate your marketing efforts and connect with your customers to increase engagement.  -->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>   -->
+<!--</section>-->
+
+<section class="portfolio">
+    <div class="top">
+        <div class="item large five">
+            <div class="five-content">
+                <h1 class="mission-title">What We Do</h1>
+                <hr>
+                <p class="mission-description"><strong>LG Marketing</strong>, LLC is a boutique consulting firm offering a comprehensive list of full-scale marketing services. 
+                We serve as an extension to your internal team while driving forward progress on your initiatives. 
+                We work closely with you to create successful programs, elevate your marketing efforts and connect with your customers to increase engagement.  
+                </p>
+            </div>
         </div>
         <div class="item small two"></div>
         <div class="item small three"></div>
+    </div>
+    
+    <div class="bottom">
         <div class="item large four"></div>
-        <div class="item large five">
-            <h1 class="mission-title">What We Do</h1>
-            <hr>
-            <p class="mission-description"><strong>LG Marketing</strong>, LLC is a boutique consulting firm offering a comprehensive list of full-scale marketing services. 
-            We serve as an extension to your internal team while driving forward progress on your initiatives. 
-            We work closely with you to create successful programs, elevate your marketing efforts and connect with your customers to increase engagement.  
-            </p>
+        <div class="item large one">
+            <div class="one-content">
+                <h1 class="one-title">Who We Are</h1>
+                <hr>
+                <p>The LG Marketing team consists of professionals with 30+ years of combined 
+                experience in medical device and practice marketing.  By aligning with premiere talent 
+                in Silicon Valley we are able to provide our clients with a wide range of services and most 
+                importantly unparalleled marketing support.</p> 
+            </div>
         </div>
     </div>
-</div>   
 </section>
 
 
+
+
   
-  <section class="goals">
+  <!--Should use flex-box: justify-content: space-between/space-around-->
+
+<section class="goals">
     <div class="goal-item create">
         <h2>Create</h2>
         <img src="assets/img/create_icon_lg.svg"></img>
@@ -105,57 +148,59 @@
 <!--        <input type="send" value="Send">-->
 <!--    </form>-->
 <!--</section>-->
-
-<section class="contact">
-    <div class="contact-section">
-       <p class="brand">Looking to get in touch?</p>
-       <p class="brand">We can't wait to hear from you!</p>
-       <br>
-       <p class="phone">Phone: (408) 320 - 7643</p>
-       <p class="email">info@lgmarketing.me</p>
+<section id="contact-section" class="contact">
+    <div class="contact-container">
+        <div class="contact-section">
+           <p class="brand">Looking to get in touch?</p>
+           <p class="brand">We can't wait to hear from you!</p>
+           <br>
+           <p class="phone">Phone: (408) 320 - 7643</p>
+           <p class="email">info@lgmarketing.me</p>
+           <div class="alert">Your message has been sent</div>
+        </div>
+        
+        <form id="contactForm">
+            <p>
+                <input type="text" name="name" placeholder="Name" id="name" required>
+            </p>
+            <p>
+                <input type="email" name="name" placeholder="Email" id="email" required>
+            </p>
+            <p>
+                <input type="text" name="name" placeholder="Subject" id="subject">
+            </p>
+            <p class="full">
+                <textarea name="message" rows="5" placeholder="Message" id="message"></textarea>
+            </p>
+            <p class="full">
+                <button type="submit">Submit</button>
+            </p>
+        </form>
     </div>
-    <form>
-        <p>
-            <input type="text" name="name" placeholder="Name">
-        </p>
-        <p>
-            <input type="email" name="name" placeholder="Email">
-        </p>
-        <p>
-            <input type="text" name="name" placeholder="Subject">
-        </p>
-        <p class="full">
-            <textarea name="message" rows="5" placeholder="Message"></textarea>
-        </p>
-        <p class="full">
-            <button>Submit</button>
-        </p>
-    </form>
 </section>
 
   
   <footer>
       <div class="address">
-        <h2>Location</h2>
         <p>Address: 3031 Tish Way</p>
         <p>110 Plaza West</p>
         <p>San Jose CA 95128</p>
-        <p>Phone: (408) 320 - 7643</p>
-        <p>Email: info@lgmarketing.me</p>
+        <p>Phone: (408) 320 - 7643 | Email: info@lgmarketing.me</p>
       </div>
-      <div class="hours">
-        <h2>Hours</h2>
-        <p>Mon - Fri: 7am - 9pm</p>
-        <p>Saturday: 8am - 5pm</p>
-        <p>Sunday: 8am - 3pm</p>
-      </div>
+      <!--<div class="hours">-->
+      <!--  <h2>Hours</h2>-->
+      <!--  <p>Mon - Fri: 7am - 9pm</p>-->
+      <!--  <p>Saturday: 8am - 5pm</p>-->
+      <!--  <p>Sunday: 8am - 3pm</p>-->
+      <!--</div>-->
+      <br>
       <div class="social-media">
-        <ul>
-          <li><a target="_blank" href="https://www.linkedin.com/company/lg-marketing-llc/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          <li><a target="_blank" href="https://www.facebook.com/lgmkting/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a target="_blank" href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        </ul>
+        <!--<ul>-->
+        <!--  <li><a target="_blank" href="https://www.linkedin.com/company/lg-marketing-llc/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>-->
+        <!--  <li><a target="_blank" href="https://www.facebook.com/lgmkting/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+        <!--  <li><a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+        <!--  <li><a target="_blank" href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+        <!--</ul>-->
         <p class="copyright">&copy; 2018 by LG Marketing LLC</p>
       </div>
 </footer>
@@ -178,8 +223,9 @@
   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
   crossorigin="anonymous">
-  
 </script>
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
 <script src="./assets/js/functions.js" type="text/javascript"></script>
+<script src="./assets/js/contact.js" type="text/javascript"></script>
 </body>
 </html>

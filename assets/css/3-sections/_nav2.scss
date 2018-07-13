@@ -1,12 +1,42 @@
+// .nav-section{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     //flex-direction: row;
+    
+//     nav{
+//         list-style: none;
+//         display: flex;
+//         //justify-content: space-between;
+//         //align-items: center;
+//         padding: 20px 10px;
+        
+//         li{
+//             margin: 0 50px;
+//         }
+//     }
+    
+//     a{
+//         text-decoration: none;
+//     }
+    
+
+// }
+
 .nav-section{
-    @include clearfix;
+    //@include clearfix;
     //@extend %center;
-    //height: 50px;
-    width: 100%;
+    height: 50px;
+    //width: 100%;
     position: relative;
-    top: 0;
-    margin: 0 auto;
-    background: #EDEDEE;
+    //top: 0;
+    //margin: 0 auto;
+    //background: transparent;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
     
     
@@ -15,6 +45,11 @@
     // padding: 1em 0;
     // position: relative;
     
+    .nav-container{
+        //width: 80%;
+        //width: 100%;
+        //padding: 0 50px;
+        //margin: 0 auto;
         
         .menu-toggle{
             //background: black;
@@ -43,17 +78,6 @@
             .hamburger::after{
                 transform: translateY(3px);
             }
-        }
-        
-        .company-brand{
-            font-family: $font-title;
-            font-size: 20px;
-            color: #4FC2AA;
-            text-transform: uppercase;
-            float: left;
-            padding: 10px 0;
-            padding-left: 10px;
-            margin: 0;
         }
         
         .site-nav{
@@ -116,72 +140,29 @@
         .open .hamburger::after{
             transform: translateY(-3px) rotate(-90deg);
         }
+    }
 }
 
 @media (min-width: 1025px){
    .nav-section{
-        //@include clearfix;
+        @include clearfix;
         height: 50px;
         width: 100%;
-        //max-width: 1100px;
         position: fixed;
-        //top: 0;
-        //margin: 0 auto;
-        //padding: 0 50px;
-        //background: #EDEDEE;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: 0 auto;
+        background: #EBECE9;
         
-        //width: 80%;
-        //width: 100%;
-        //padding: 0 50px;
-        //margin: 0 auto;
-        
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        
-        
-        
-        // background: #e54b4b;
-        // color: #ebebd3;
-        // padding: 1em 0;
-        position: relative;
-            
-            
-            
+        .nav-container{
+            list-style: none;
+            display: flex;
+            padding: 20px 10px;
             
             .menu-toggle{
-                //background: black;
                 display: none;
-                
-                .hamburger,
-                .hamburger::before,
-                .hamburger::after {
-                    content: '';
-                    display: block;
-                    background: #7F7F7F;
-                    height: 3px;
-                    width: 1.75em;
-                    border-radius: 3px;
-                    transition: all ease-in-out 350ms;
-                }
-                
-                .hamburger::before{
-                    transform: translateY(-6px);
-                }
-                
-                .hamburger::after{
-                    transform: translateY(3px);
-                }
-            }
-            
-            .company-brand{
-                font-family: $font-title;
-                font-size: 20px;
-                color: #4FC2AA;
-                text-transform: uppercase;
-                float: left;
-                padding: 10px 0;
-                margin: 0;
             }
             
             .site-nav{
@@ -198,9 +179,6 @@
                     
                     li{
                         display: inline-block;
-                        //margin-left: 70px;
-                        //border: white solid 2px;
-                        //border-bottom: 1px solid #575766;
                         border: none;
                     }
                     
@@ -211,19 +189,16 @@
                     
                     a{
                         text-decoration:none;
-                        //display: block;
-                        //margin-left: 5em;
-                        padding: 0 5em;
+                        padding: 0 4.3em;
                         color: #7F7F7F;
-                        //@extend %small-bold;
                         
                         &:hover{
-                            //color: #70beaa;
                             color: #4FC2AA;
                         }
                     }
                 }
             }
+        }
     } 
 }
 

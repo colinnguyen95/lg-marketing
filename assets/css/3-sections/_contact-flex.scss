@@ -1,0 +1,160 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $font-motto;
+    height: 550px;
+    padding: 20px;
+    background: linear-gradient(
+        rgba(0,0,0, .5),
+        rgba(0,0,0, .9),
+        rgba(0,0,0, .5)),
+        url( ../../assets/img/contact_lg.jpg);
+    
+    background : {
+        size: cover;
+        position: center;
+        repeat: no-repeat;
+    }
+    
+    .contact-container{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+        .contact-section{
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            text-align: center;
+            p{
+                margin: 6px;
+            }
+            .brand{
+                font-size: 20px;
+            }
+            
+            .phone, .email{
+                font-size: 14px;
+            }
+        }
+        
+        form{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            
+            p{
+                margin: 10px;
+            }
+            
+            button, input, textarea{
+                width: 100%;
+                padding: 0.3em 0;
+            }
+            
+            button{
+                background: #4FC2AA;
+                border: none;
+                border-radius: 10px;
+            }
+        }
+        
+        .alert{
+            text-align: center;
+            padding: 10px;
+            background: #79c879;
+            color: #fff;
+            margin-bottom: 10px;
+            display: none;
+        }
+    }
+    
+    
+    
+}
+
+@media (min-width: 768px){
+    .contact{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        height: 500px;
+        padding: 50px 50px;
+        margin: 50px 0;
+        
+        background : {
+            size: cover;
+            //attachment: fixed;
+            position: center;
+            repeat: no-repeat;
+        }
+        
+        .contact-container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .contact-section{
+                margin: 0 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                p{
+                    margin: 10px;
+                }
+                .brand{
+                    font-size: 30px;
+                }
+                
+                .phone, .email{
+                    font-size: 20px;
+                }
+            }
+            
+            form{
+                margin: 0 20px;
+                height: 70%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                flex-basis: 40%;
+                
+                p{
+                    margin: 0;
+                }
+                
+                button, input, textarea{
+                    width: 95%;
+                    padding: 0.5em;
+                }
+                
+                button{
+                    background: #4FC2AA;
+                    border: 0;
+                }
+                
+                button:hover, button:focus{
+                    background: #2A7C6B;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1025px){
+    .contact{
+        margin: 50px;
+    }
+}

@@ -1,26 +1,30 @@
-.goal-item{
-    background: white;
-    display: inline-block;
-    @extend %center;
+.goals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 10px;
     height: 100%;
-    //height: 500px;
+    text-align: center;
+}
+
+.goal-item{
+    margin-bottom: 20px;
+    background: white;
+    height: 100%;
     max-width: 620px;
     padding: 0 20px;
-    //margin: 50px auto;
     font-size: 18px;
     text-align: center;
     font-weight: lighter;
     line-height: 1.6;
     border-radius: 20px;
-    //background: linear-gradient(#4FC2AA 15%, white 15%);
     box-shadow: 8px 8px 20px 0px rgba(0,0,0,0.4);
     
     h2{
         color: #4FC2AA;
         font-family: $font-motto;
         font-weight: lighter;
-        //padding-bottom: 10%;
-        //margin: 20px;
     }
     p{
         color: #7F7F7F;
@@ -32,50 +36,35 @@
 }
 
 .create{
-    grid-area: create;
+
 }
 
 .elevate{
-    grid-area: elevate;
+
 }
 
 .engage{
-    grid-area: engage;
+    margin: 0;
+
 }
 
-.goals{
-    // background: url(../../assets/img/fivek.jpg);
-    // background-size: cover;
-    @extend %center;
-    margin: 50px 10px;
-    height: 100%;
-    //padding: 5%;
-    display: grid;
-    text-align: center;
-    //grid-template-columns: repeat(3, 1fr);
-    // grid-template-columns: repeat(1, 1fr);
-    // grid-auto-rows: minmax(100px, auto);
-    grid-template-columns: 1fr;
-    //grid-template-rows: 1fr;
-    grid-gap: 50px;
+@media(min-width: 768px){
+    .goals{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 50px 15px;
+        height: 500px;
+        text-align: center;
+    }
     
-    grid-template-areas:
-    "create"
-    "elevate"
-    "engage";
-    
-    // grid-template-areas:
-    // "create elevate engage"
-    // "create elevate engage"
-    // "create elevate engage";
-    
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  .goal-item{
+    .goal-item{
+        flex-basis: 27%;
+        margin: 0;
         background: white;
         height: 100%;
+        max-width: 620px;
         padding: 0 20px;
         font-size: 18px;
         text-align: center;
@@ -88,90 +77,130 @@
             color: #4FC2AA;
             font-family: $font-motto;
             font-weight: lighter;
-            //padding-bottom: 10%;
-            margin: 10px;
         }
         p{
             color: #7F7F7F;
-            margin: 10px;
         }
         img{
-            width: 100px;
-            height: 100px;
+            width: 130px;
+            height: 130px;
         }
-    }
-    
-    .create{
-        grid-area: create;
-    }
-    
-    .elevate{
-        grid-area: elevate;
-    }
-    
-    .engage{
-        grid-area: engage;
-    }
-    
-    .goals{
-        margin: 50px 10px;
-        height: 100%;
-        display: grid;
-        text-align: center;
-        grid-template-columns: repeat(3, 1fr);
-        // grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(100px, auto);
-        grid-gap: 10px;
-        
-        grid-template-areas:
-        "create elevate engage"
-        "create elevate engage"
-        "create elevate engage"
     }
 }
 
 @media(min-width: 1025px){
+    .goals{
+        margin: 50px;
+    }
     
     .goal-item{
-        background: white;
-        display: inline-block;
-        height: 100%;
-        height: 500px;
-        max-width: 620px;
+        flex-basis: 22%;
         padding: 0 50px;
-        //margin: 50px auto;
-        font-size: 18px;
-        text-align: center;
-        font-weight: lighter;
-        line-height: 1.6;
-        border-radius: 20px;
-        //background: linear-gradient(#4FC2AA 15%, white 15%);
-        box-shadow: 8px 8px 20px 0px rgba(0,0,0,0.4);
-        
-        img{
-        width: 130px;
-        height: 130px;
-        }
-    }
-    
-    .goals{
-        //max-width: 1281px;
-        margin: 50px;
-        height: 100%;
-        //padding: 5%;
-        display: grid;
-        text-align: center;
-        grid-template-columns: repeat(3, 1fr);
-        // grid-template-columns: repeat(1, 1fr);
-        grid-auto-rows: minmax(100px, auto);
-        // grid-template-columns: 1fr;
-        //grid-template-rows: 1fr;
-        grid-gap: 50px;
-        
-        grid-template-areas:
-        "create elevate engage"
-        "create elevate engage"
-        "create elevate engage";
-        
     }
 }
+
+
+
+// @media (min-width: 768px) and (max-width: 1024px) {
+  
+//   .goal-item{
+//         background: white;
+//         height: 100%;
+//         padding: 0 20px;
+//         font-size: 18px;
+//         text-align: center;
+//         font-weight: lighter;
+//         line-height: 1.6;
+//         border-radius: 20px;
+//         box-shadow: 8px 8px 20px 0px rgba(0,0,0,0.4);
+        
+//         h2{
+//             color: #4FC2AA;
+//             font-family: $font-motto;
+//             font-weight: lighter;
+//             //padding-bottom: 10%;
+//             margin: 10px;
+//         }
+//         p{
+//             color: #7F7F7F;
+//             margin: 10px;
+//         }
+//         img{
+//             width: 100px;
+//             height: 100px;
+//         }
+//     }
+    
+//     .create{
+//         grid-area: create;
+//     }
+    
+//     .elevate{
+//         grid-area: elevate;
+//     }
+    
+//     .engage{
+//         grid-area: engage;
+//     }
+    
+//     .goals{
+//         margin: 50px 10px;
+//         height: 100%;
+//         display: grid;
+//         text-align: center;
+//         grid-template-columns: repeat(3, 1fr);
+//         grid-auto-rows: minmax(100px, auto);
+//         grid-gap: 10px;
+        
+//         grid-template-areas:
+//         "create elevate engage"
+//         "create elevate engage"
+//         "create elevate engage"
+//     }
+// }
+
+// @media(min-width: 1025px){
+    
+//     .goal-item{
+//         background: white;
+//         display: inline-block;
+//         height: 100%;
+//         height: 500px;
+//         max-width: 620px;
+//         padding: 0 50px;
+//         //margin: 50px auto;
+//         font-size: 18px;
+//         text-align: center;
+//         font-weight: lighter;
+//         line-height: 1.6;
+//         border-radius: 20px;
+//         //background: linear-gradient(#4FC2AA 15%, white 15%);
+//         box-shadow: 8px 8px 20px 0px rgba(0,0,0,0.4);
+        
+//         img{
+//         width: 130px;
+//         height: 130px;
+//         }
+//     }
+    
+//     .goals{
+//         //max-width: 1281px;
+//         margin: 50px;
+//         height: 100%;
+//         //padding: 5%;
+//         display: grid;
+//         text-align: center;
+//         grid-template-columns: repeat(3, 1fr);
+//         // grid-template-columns: repeat(1, 1fr);
+//         grid-auto-rows: minmax(100px, auto);
+//         // grid-template-columns: 1fr;
+//         //grid-template-rows: 1fr;
+//         grid-gap: 50px;
+        
+//         grid-template-areas:
+//         "create elevate engage"
+//         "create elevate engage"
+//         "create elevate engage";
+        
+//     }
+// }
